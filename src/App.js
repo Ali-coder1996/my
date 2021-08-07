@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Main from './component/Main'
+import Favorit from './component/Favorit'
+import Footer from './component/Footer';
+import Nav from './component/Nav';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Nav/>
+        <Main />
+        <Favorit />
+        <Footer/>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
